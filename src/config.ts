@@ -1,5 +1,5 @@
 import Phaser from "phaser";
-
+import { scenes } from "./scenes/scenes";
 //Настройка проекта
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
@@ -12,7 +12,7 @@ const config: Phaser.Types.Core.GameConfig = {
       gravity: { x: 0, y: 200 },
     },
   },
-  scene: [],
+  scene: scenes,
 };
 
 export default config;
