@@ -5,7 +5,12 @@ class PreloadScene extends Scene {
     super("PreloadScene");
   }
 
+  preload() {
+    //Тут загружаем игровые ассеты из папки public
+  }
+
   create() {
+    //Переходим после загрузки игровых ассетов на новую сцену
     this.scene.start("MainScene");
   }
 }
