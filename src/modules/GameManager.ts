@@ -1,8 +1,9 @@
-//состояния игры
-export enum GameState {}
+import GameState from "../states/GameState";
 
 export class GameManager {
   private static instance: GameManager | null = null;
+
+  gameState: GameState = GameState.INIT;
 
   private constructor() {
     //пустой конструктор
@@ -15,7 +16,7 @@ export class GameManager {
     return GameManager.instance;
   }
 
-  public updateGameState(state: GameState): void {
+  public updateGameState(newState: GameState): void {
     //здесь логика с состоянием игры
   }
 }
