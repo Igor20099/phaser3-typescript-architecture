@@ -15,7 +15,7 @@ export class GameManager {
     return GameManager.instance;
   }
 
-  public changeState(): void {
+  public updateGameState(state: GameState): void {
     //здесь логика с состоянием игры
   }
 }
