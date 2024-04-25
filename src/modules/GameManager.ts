@@ -17,6 +17,7 @@ export class GameManager {
   }
 
   public updateGameState(newState: GameState): void {
+    this.gameState = newState;
     //здесь логика с состоянием игры
   }
 }
