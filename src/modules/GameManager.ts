@@ -1,6 +1,6 @@
 import GameState from "../states/GameState";
 
-export class GameManager {
+class GameManager {
   private static instance: GameManager | null = null;
 
   gameState: GameState = GameState.INIT;
@@ -21,3 +21,5 @@ export class GameManager {
     //здесь логика с состоянием игры
   }
 }
+
+export default GameManager;
